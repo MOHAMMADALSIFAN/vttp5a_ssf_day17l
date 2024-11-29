@@ -38,11 +38,9 @@ public class JokesRestService {
 
      Jokes jk = new Jokes();
       jk.setId(record.getInt("id"));
-      jk.setId(record.getString("type"));
-      jk.setId(record.getInt("id"));
-      jk.setId(record.getInt("id"));
-
-   
+      jk.setType(record.getString("type"));
+      jk.setSetup(record.getString("setup"));
+      jk.setPunchline(record.getString("punchline"));
      jokes.add(jk);
   }
 
